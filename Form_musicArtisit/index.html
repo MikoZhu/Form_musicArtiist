@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Artists</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- leftpart -->
+    <section class="picture_section">
+        
+        <img src="./music.png" alt="Musical Artists' Picture">
+    </section>
+
+    <!-- rightpart -->
+    <section class="formcontainer">
+    <form action="http://httpbin.org/anything" method="post">
+        <p>Your Favorite Musical Artists </p>
+        <div class="namefield">
+            <label for="namelabel" class="name_label">
+                Name
+                <input type="text" name="namelabel" maxlength="30" required>
+            </label>
+            
+        </div>
+        <div class="emailfield">
+            <label for="emaillabel" class="email_label">
+                Email
+                <input type="email" name="emaillabel"  required>
+            </label>
+            
+        </div>
+        <div class="phonefield">
+            <label for="phone">
+                Phone
+                <input type="tel" name="phone" required>
+            </label>
+        </div>
+
+        <!-- dropdown list -->
+        <div class="class musicalgenre">
+            <label class="genre">Who is your favorite musical artist?</label>
+            <select name="genre" id="genre">
+                <option value="" >please choose one</option>
+                <option value="Taylor Swift">Taylor Swift</option>
+                <option value="Ed Sheeran">Ed Sheeran</option>
+                <option value="Adelet">Adele</option>
+                <option value="Drake">Drake</option>
+                <option value="Kendrick Lamar">Kendrick Lamar</option>
+                <option value="The Chainsmokers">The Chainsmokers</option>
+                <option value="Marshmello">Marshmello</option>
+            </select>
+        </div>
+        <div class="reason">
+            <label for="reason">Why you like this musical artist?</label>
+            <textarea name="reason"  cols="30" rows="10" placeholder="Please describe here . . ."></textarea>
+        </div>
+        <div class="button_container">
+            <button class="submit">Submit</button>
+            <button class="reset">Reset</button>
+        </div>
+        </form>   
+    </section> 
+</body>
+</html>
